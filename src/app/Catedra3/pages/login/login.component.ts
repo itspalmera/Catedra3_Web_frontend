@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { LoginFormComponent } from "../../components/froms-login/froms-login.component";
+import { FromsLoginComponent } from '../../components/froms-login/froms-login.component';
 
 @Component({
   selector: 'login',
-  imports: [LoginFormComponent],
+  imports: [FromsLoginComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

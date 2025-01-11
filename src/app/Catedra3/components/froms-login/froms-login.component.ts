@@ -1,23 +1,17 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
-import { Router } from '@angular/router';
-import { Login } from '../../interfaces/Login';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
+import { Login } from '../../interfaces/login';
 
 @Component({
-  selector: 'login-form',
-  imports: [
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
-    CommonModule,
-  ],
-  templateUrl: './login-form.component.html',
-  styleUrls: ['./login-form.component.css']
+  selector: 'froms-login',
+  imports: [],
+  templateUrl: './froms-login.component.html',
+  styleUrl: './froms-login.component.css'
 })
-export class LoginFormComponent {
+export class FromsLoginComponent {
+
   loginForm: FormGroup;
   errorMessage: string = '';
 
